@@ -5,14 +5,18 @@ import App from './App'
 import router from './router'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
-// import ElementUI from 'element-ui'
+import ElementUI from 'element-ui'
+import fastclick from 'fastclick'
+import './assets/reset.css'
+import './assets/border.css'
 
-
+//fastclick
+fastclick.attach(document.body);
 // 引入mockjs
 require('./mock')
 //不能写反
 Vue.use(VueAxios,axios)
-// Vue.use(ElementUI)
+Vue.use(ElementUI)
 Vue.config.productionTip = false
 
 
